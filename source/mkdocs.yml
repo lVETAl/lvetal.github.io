@@ -13,7 +13,7 @@ nav:
       - Лабораторная работа №5: labs/lab5.md
   - Контакты: contact.md
 theme:
-  name: dracula
+  name: material
   favicon: assets/images/icon.png
   logo: assets/images/logo.png
   palette:
