@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Портфолио Елизаветы Симиной
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Приветствую! Меня зовут Елизавета Симина, я студентка ИТМО направления **Нейротехнологии и программирование**.
 
-## Commands
+Этот сайт представляет собой портфолио и собирает в себе отчеты лабораторных работ. Здесь собраны отчёты о выполненных заданиях в рамках курса по Python
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Сайт построен с помощью генератора **MkDocs**, тема оформления — **Material**.  
+В разделе «Лабораторные работы» вы можете ознакомиться с каждым проектом подробнее.
