@@ -73,11 +73,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#no-2" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -489,8 +484,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -682,6 +675,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -733,8 +754,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -751,161 +770,9 @@
 
 
 
-<h1 id="no-2">Отчет по лабораторной работе № 2</h1>
-<h1 id="numpy">Основы NumPy: массивы и векторные операции</h1>
-<h2 id="_1"><strong>Цель работы</strong></h2>
-<p>Освоить основные операции с векторами в Python с применением библиотеки NumPy. Реализовать набор функций для создания и преобразования массивов, выполнения линейно-алгебраических операций, статистического анализа табличных данных и построения визуализаций. Обеспечить соответствие кода стандартам PEP-8, PEP-484 и PEP-257, а также протестировать решение.</p>
-<h2 id="_2"><strong>Среда разработки и архитектура</strong></h2>
-<ul>
-<li><strong>Язык:</strong> Python 3.10+  </li>
-<li><strong>Виртуальное окружение:</strong> env  </li>
-<li><strong>Зависимости:</strong> numpy, pandas, matplotlib, seaborn, pytest  </li>
-<li><strong>Структура каталога:</strong></li>
-</ul>
-<p>numpy_lab/</p>
-<p>├── main.py</p>
-<p>├── test.py</p>
-<p>├── data/</p>
-<p>│   └── students_scores.csv</p>
-<p>└── plots/ </p>
-<h2 id="_3"><strong>Выполненные задания</strong></h2>
-<h3 id="_4"><strong>Создание и обработка массивов</strong></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Функция</th>
-<th style="text-align: left;">Реализация</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">create_vector()</td>
-<td style="text-align: left;">np.arange(10) - массив [0..9]</td>
-</tr>
-<tr>
-<td style="text-align: left;">create_matrix()</td>
-<td style="text-align: left;">np.random.rand(5, 5) - матрица 5×5 из равномерного распределения</td>
-</tr>
-<tr>
-<td style="text-align: left;">reshape_vector(vec)</td>
-<td style="text-align: left;">vec.reshape(2, 5) - преобразование формы без копирования данных</td>
-</tr>
-<tr>
-<td style="text-align: left;">transpose_matrix(mat)</td>
-<td style="text-align: left;">mat.T - транспонирование</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Векторные операции</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Функция</th>
-<th style="text-align: left;">Реализация</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">vector_add(a, b)</td>
-<td style="text-align: left;">a + b - поэлементное сложение</td>
-</tr>
-<tr>
-<td style="text-align: left;">scalar_multiply(vec, scalar)</td>
-<td style="text-align: left;">vec * scalar - broadcasting</td>
-</tr>
-<tr>
-<td style="text-align: left;">elementwise_multiply(a, b)</td>
-<td style="text-align: left;">a * b - поэлементное умножение</td>
-</tr>
-<tr>
-<td style="text-align: left;">dot_product(a, b)</td>
-<td style="text-align: left;">np.dot(a, b) - скалярное произведение</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Матричные операции</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Функция</th>
-<th style="text-align: left;">Реализация</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">matrix_multiply(a, b)</td>
-<td style="text-align: left;">a @ b - матричное умножение</td>
-</tr>
-<tr>
-<td style="text-align: left;">matrix_determinant(a)</td>
-<td style="text-align: left;">np.linalg.det(a) - расчет определителя</td>
-</tr>
-<tr>
-<td style="text-align: left;">matrix_inverse(a)</td>
-<td style="text-align: left;">np.linalg.inv(a) - обратная матрица</td>
-</tr>
-<tr>
-<td style="text-align: left;">solve_linear_system(a, b)</td>
-<td style="text-align: left;">np.linalg.solve(a, b) - решение Ax \= b</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Статистический анализ</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Функция</th>
-<th style="text-align: left;">Реализация</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">load_dataset(path)</td>
-<td style="text-align: left;">pd.read_csv(path).to_numpy() - загрузка данных</td>
-</tr>
-<tr>
-<td style="text-align: left;">statistical_analysis(data)</td>
-<td style="text-align: left;">Расчёт mean, median, std, min, max, p25, p75 через numpy</td>
-</tr>
-<tr>
-<td style="text-align: left;">normalize_data(data)</td>
-<td style="text-align: left;">Min-Max: (x - min) / (max - min) с защитой от max \== min</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Визуализация</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Функция</th>
-<th style="text-align: left;">Реализация</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">plot_histogram(data)</td>
-<td style="text-align: left;">plt.hist() - сохранение в plots/histogram.png</td>
-</tr>
-<tr>
-<td style="text-align: left;">plot_heatmap(matrix)</td>
-<td style="text-align: left;">sns.heatmap() - сохранение в plots/heatmap.png</td>
-</tr>
-<tr>
-<td style="text-align: left;">plot_line(x, y)</td>
-<td style="text-align: left;">plt.plot() - сохранение в plots/line_plot.png</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_5"><strong>Тестирование</strong></h2>
-<ul>
-<li>Использован фреймворк pytest.  </li>
-<li>Тесты вынесены в отдельный файл test.py, импортируют функции явно.  </li>
-<li>Проверены: корректность форм, точность вычислений, устойчивость к краевым случаям, работоспособность графического вывода.  </li>
-<li>Команда запуска: python -m pytest test.py -v  </li>
-<li>Файл был проверен на 17 тестах. Результат - все функции прошли тестирование</li>
-</ul>
-<h2 id="_6"><strong>Вывод</strong></h2>
-<p>В ходе выполнения лабораторной работы были закреплены практические навыки работы с научными вычислениями в Python. Реализован полный цикл обработки данных: от создания и преобразования массивов до статистического анализа и визуализации. </p>
+  <h1>Лабораторная работа №2</h1>
+
+<p>dw</p>
 
 
 
